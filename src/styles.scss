@@ -1,1 +1,28 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Muli:400,500,600,700&display=swap');
+@import "variables";
+@import "components";
+
+::selection {
+  background-color: $selection-background-color;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: auto;
+  font-family: 'Muli', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 1.2;
+  color: $typography-default;
+  min-height: 100%;
+  background-color: $background-default;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: $container-max-width;
+}

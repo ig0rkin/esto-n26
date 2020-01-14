@@ -1,0 +1,17 @@
+@import "variables";
+
+a.nav-link {
+  text-decoration: none;
+
+  &:hover {
+    color: $typography-interactive-default;
+
+    svg {
+      fill: $typography-interactive-default;
+    }
+  }
+
+  &.active {
+    color: $typography-light;
+  }
+}

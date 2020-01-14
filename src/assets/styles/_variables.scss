@@ -1,0 +1,73 @@
+// Colors
+$background-default: rgb(255, 255, 255);
+$background-alternate: rgb(251, 251, 251);
+$background-screen: rgb(251, 251, 251);
+$background-button-primary-active: rgb(54, 161, 139);
+$background-button-primary-pressed: rgb(42, 126, 109);
+$background-button-primary-disabled: rgb(228, 242, 239);
+$background-button-secondary: rgb(255, 255, 255);
+$background-container-teal: rgb(54, 161, 139);
+$background-container-rhubarb: rgb(203, 124, 122);
+$background-container-wheat: rgb(205, 163, 95);
+$background-container-petrol: rgb(38, 102, 120);
+$background-container-secondary-teal: rgb(202, 215, 202);
+$background-container-secondary-rhubarb: rgb(229, 195, 199);
+$background-container-secondary-wheat: rgb(245, 214, 186);
+$background-container-secondary-petrol: rgb(200, 215, 229);
+$background-container-light: rgb(245, 245, 245);
+$background-container-light-teal: rgb(228, 242, 239);
+$background-container-light-rhubarb: rgb(242, 228, 228);
+$background-container-light-wheat: rgb(242, 233, 218);
+$background-container-light-petrol: rgb(227, 238, 241);
+$background-light-error-red: rgb(248, 237, 237);
+$background-info-card: rgb(230, 230, 230);
+
+// Selection color
+$selection-background-color: rgba(72, 172, 152, 0.2);
+
+// Typography colors
+$typography-default: rgb(27, 27, 27);
+$typography-default-inverted: rgb(255, 255, 255);
+$typography-default-consistent: rgb(27, 27, 27);
+$typography-default-inverted-consistent: rgb(255, 255, 255);
+$typography-extra-light: rgb(191, 191, 191);
+$typography-light: rgb(116, 116, 116);
+$typography-interactive-default: rgb(54, 161, 139);
+$typography-interactive-teal: rgb(42, 126, 109);
+$typography-interactive-rhubarb: rgb(203, 124, 122);
+$typography-interactive-wheat: rgb(205, 163, 95);
+$typography-interactive-petrol: rgb(38, 102, 120);
+$typography-error: rgb(180, 75, 70);
+
+// Divider colors
+$divider-default: rgb(230, 230, 230);
+$divider-teal: rgb(54, 161, 139);
+$divider-error: rgb(180, 75, 70);
+$divider-dark: rgb(116, 116, 116);
+
+// Icon colors
+$iconography-default: rgb(27, 27, 27);
+$iconography-default-inverted: rgb(255, 255, 255);
+$iconography-light: rgb(116, 116, 116);
+$iconography-bright: rgb(230, 230, 230);
+$iconography-action: rgb(54, 161, 139);
+
+// Sizing
+$container-max-width: 79.3rem;
+$header-height: 70px;
+$content-padding-top: $header-height;
+
+// Border radius
+$border-radius-5-xl: 34px;
+$border-radius-4-xl: 27px;
+$border-radius-3-xl: 22px;
+$border-radius-2-xl: 14px;
+$border-radius-xl: 10px;
+$border-radius-l: 8px;
+$border-radius-m: 6px;
+$border-radius-s: 5px;
+$border-radius-xs: 4px;
+$border-radius-2-xs: 2px;
+$border-radius-credit-card: 3% / 5%;
+$border-radius-half: 50%;
+$border-radius-circle: 100vw;
