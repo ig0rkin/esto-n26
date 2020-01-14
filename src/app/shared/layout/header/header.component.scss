@@ -1,0 +1,28 @@
+@import "variables";
+
+header {
+  height: $header-height;
+  font-size: 0.889rem;
+  background-color: $background-default;
+  opacity: 0.98;
+}
+
+a {
+  color: $typography-default;
+}
+
+.n26-logo {
+  height: 30px;
+}
+
+.n26-country-badge {
+  position: absolute;
+  top: 16px;
+  font-size: 0.6rem;
+  color: $typography-light;
+}
+
+.online-banking-icon {
+  width: 1rem;
+  height: 1rem;
+}

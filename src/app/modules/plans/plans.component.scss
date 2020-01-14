@@ -1,0 +1,21 @@
+@import "variables";
+
+.plans-container {
+  background-color: $background-container-light;
+}
+
+.plans-content-wrapper {
+  max-width: 50em;
+}
+
+h1 {
+  font-size: 1.667rem;
+  font-weight: 700;
+}
+
+.plans-nav-link {
+
+  &.active {
+    border-bottom: 3px solid $typography-interactive-teal;
+  }
+}
