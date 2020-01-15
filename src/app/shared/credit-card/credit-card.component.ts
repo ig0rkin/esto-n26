@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { ICreditCard } from '@core/models/credit-card';
 
 @Component({
   selector: 'n26-credit-card',
@@ -7,7 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreditCardComponent implements OnInit {
 
-  constructor() { }
+  @Input() card: ICreditCard;
+  @Input('enableSwiper') isSwiperEnabled: boolean;
+
+  constructor() {
+  }
 
   ngOnInit() {
   }

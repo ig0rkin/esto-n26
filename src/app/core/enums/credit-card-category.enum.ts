@@ -1,4 +1,4 @@
-export enum PlanType {
+export enum CreditCardCategory {
   PERSONAL = 'personal',
   BUSINESS = 'business'
 }

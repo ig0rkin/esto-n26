@@ -4,7 +4,7 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { ICreditCard } from '@core/models/credit-card';
 import { CreditCardType } from '@core/enums/credit-card-type.enum';
 import { CreditCardColor } from '@core/enums/credit-card-color.enum';
-import { PlanType } from '@core/enums/plan-type.enum';
+import { CreditCardCategory } from '@core/enums/credit-card-category.enum';
 
 @Injectable({
   providedIn: 'root'
@@ -13,7 +13,7 @@ export class PlansService {
   private creditCards: ICreditCard[] = [
     {
       type: CreditCardType.STANDARD,
-      planType: PlanType.PERSONAL,
+      category: CreditCardCategory.PERSONAL,
       imageUrls: [
         // tslint:disable-next-line:max-line-length
         'https://images.ctfassets.net/q33z48p65a6w/2DqC4xSMtayA6kmOo64I0E/3ffc778485421fda7b68b01f554700e0/n26-cards-mastercard-uk.png?fit=thumb&fm=png&q=90&w=275'
@@ -25,7 +25,7 @@ export class PlansService {
     },
     {
       type: CreditCardType.STANDARD,
-      planType: PlanType.PERSONAL,
+      category: CreditCardCategory.PERSONAL,
       imageUrls: [
         // tslint:disable-next-line:max-line-length
         'https://images.ctfassets.net/q33z48p65a6w/63bHYeBzGel7qMrWS50qal/643862fbfbd72ca876f384d5ad0944c6/n26-cards-mastercard-petrol-de.png?fit=thumb&fm=webp&q=90&w=275',
@@ -49,7 +49,7 @@ export class PlansService {
     },
     {
       type: CreditCardType.METAL,
-      planType: PlanType.PERSONAL,
+      category: CreditCardCategory.PERSONAL,
       imageUrls: [
         // tslint:disable-next-line:max-line-length
         'https://images.ctfassets.net/q33z48p65a6w/4tH5CPvCzm6eWusOuACoaU/bc5e6d4e6ab790cce10052fd55b5e4f1/n26-cards-mastercard-metal-charcoalblack.png?fit=thumb&fm=webp&q=90&w=275',

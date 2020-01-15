@@ -6,10 +6,17 @@ $background-button-primary-active: rgb(54, 161, 139);
 $background-button-primary-pressed: rgb(42, 126, 109);
 $background-button-primary-disabled: rgb(228, 242, 239);
 $background-button-secondary: rgb(255, 255, 255);
+
 $background-container-teal: rgb(54, 161, 139);
 $background-container-rhubarb: rgb(203, 124, 122);
 $background-container-wheat: rgb(205, 163, 95);
 $background-container-petrol: rgb(38, 102, 120);
+$background-container-ash: rgb(138, 138, 140);
+$background-container-charcoal-black: rgb(56, 56, 55);
+$background-container-quartz-rose: rgb(232, 180, 160);
+$background-container-slate-grey: rgb(138, 138, 140);
+$background-container-transparent: rgb(178, 178, 180);
+
 $background-container-secondary-teal: rgb(202, 215, 202);
 $background-container-secondary-rhubarb: rgb(229, 195, 199);
 $background-container-secondary-wheat: rgb(245, 214, 186);
@@ -24,6 +31,9 @@ $background-info-card: rgb(230, 230, 230);
 
 // Selection color
 $selection-background-color: rgba(72, 172, 152, 0.2);
+
+// Button background gradient
+$background-button-opacity-gradient: linear-gradient(to top, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
 
 // Typography colors
 $typography-default: rgb(27, 27, 27);
@@ -71,3 +81,8 @@ $border-radius-2-xs: 2px;
 $border-radius-credit-card: 3% / 5%;
 $border-radius-half: 50%;
 $border-radius-circle: 100vw;
+
+// Box shadows
+$box-shadow-swiper-button: rgb(255, 255, 255) 0px 0px 0px 3px, rgba(0, 0, 0, 0.4) 0px 4px 10px;
+$box-shadow-swiper-button-focus: 0 0 0 3px rgba(54, 161, 139, 0.6), 0 4px 10px rgba(0, 0, 0, 0.4);
+$box-shadow-credit-card: 0 45px 65px -40px rgb(116, 116, 116);

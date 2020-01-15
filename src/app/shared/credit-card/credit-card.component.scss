@@ -1,0 +1,82 @@
+@import "variables";
+
+.card-title {
+  font-size: 1.389em;
+  font-weight: 700;
+}
+
+.card-image {
+  height: 8.333em;
+  width: 13.333em;
+  box-shadow: $box-shadow-credit-card;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.swiper-control {
+  position: relative;
+  width: 1.111em;
+  height: 1.111em;
+  border: none;
+  outline: none;
+  border-radius: $border-radius-half;
+  background-color: transparent;
+
+  &::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: $border-radius-half;
+    background-image: $background-button-opacity-gradient;
+  }
+
+  &.active {
+    box-shadow: $box-shadow-swiper-button;
+
+    &:focus {
+      box-shadow: $box-shadow-swiper-button-focus;
+    }
+  }
+
+  &-transparent {
+    background-color: $background-container-transparent;
+  }
+
+  &-petrol {
+    background-color: $background-container-petrol;
+  }
+
+  &-wheat {
+    background-color: $background-container-wheat;
+  }
+
+  &-rhubarb {
+    background-color: $background-container-rhubarb;
+  }
+
+  &-teal {
+    background-color: $background-container-teal;
+  }
+
+  &-ash {
+    background-color: $background-container-ash;
+  }
+
+  &-charcoal_black {
+    background-color: $background-container-charcoal-black;
+  }
+
+  &-quartz_rose {
+    background-color: $background-container-quartz-rose;
+  }
+
+  &-slate_grey {
+    background-color: $background-container-slate-grey;
+  }
+}
