@@ -9,7 +9,7 @@
       </nav>
     </div>
 
-
+    <pre *ngFor="let card of creditCards$ | async">{{ card | json }}</pre>
 
   </div>
 </div>

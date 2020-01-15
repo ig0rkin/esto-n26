@@ -1,5 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 
+import { PlansService } from '@modules/plans/plans.service';
+import { Observable } from 'rxjs';
+
+import { ICreditCard } from '@core/models/credit-card';
+
 @Component({
   selector: 'n26-plans',
   templateUrl: './plans.component.html',
@@ -7,9 +12,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class PlansComponent implements OnInit {
 
-  constructor() { }
+  public creditCards$: Observable<ICreditCard[]>;
 
-  ngOnInit() {
+
+  constructor(public plansService: PlansService) {
   }
 
+  ngOnInit() {
+    this.creditCards$ = this.plansService.getCreditCardsAsObservable();
+  }
 }

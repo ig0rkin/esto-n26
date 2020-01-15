@@ -3,12 +3,14 @@ import { CommonModule } from '@angular/common';
 
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
+import { CreditCardComponent } from './credit-card/credit-card.component';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    CreditCardComponent
   ],
   imports: [
     CommonModule
@@ -18,6 +20,7 @@ import { FooterComponent } from './layout/footer/footer.component';
 
     HeaderComponent,
     FooterComponent,
+    CreditCardComponent
   ]
 })
 export class SharedModule {
