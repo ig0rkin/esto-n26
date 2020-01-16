@@ -3,7 +3,7 @@ import { Component, Input, OnInit } from '@angular/core';
 import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
 
 import { ICreditCard } from '@core/models/credit-card';
-import { CreditCardService } from '@shared/credit-card/credit-card.service';
+import { CreditCardService } from './credit-card.service';
 
 @Component({
   selector: 'n26-credit-card',

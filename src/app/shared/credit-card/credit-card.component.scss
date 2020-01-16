@@ -1,5 +1,20 @@
 @import "variables";
 
+.card-container {
+  position: relative;
+
+  &::before {
+    content: "";
+    width: 13.333em;
+    height: 8.333em;
+    position: absolute;
+    top: 4.611em;
+    left: 1.688em;
+    box-shadow: $box-shadow-credit-card;
+    border-radius: $border-radius-m;
+  }
+}
+
 .card-title {
   font-size: 1.389em;
   font-weight: 700;
@@ -8,11 +23,5 @@
 .card-image {
   height: 8.333em;
   width: 13.333em;
-  box-shadow: $box-shadow-credit-card;
-
-  img {
-    width: 100%;
-    height: auto;
-  }
 }
 

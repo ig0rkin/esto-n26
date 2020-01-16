@@ -1,17 +1,15 @@
-<div class="d-flex flex-column align-items-center p-4">
+<div class="card-container d-flex flex-column align-items-center p-4">
 
   <!-- Card title -->
   <h2 class="card-title mb-4 text-center">{{ card.name }}</h2>
 
   <!-- Card content -->
   <div class="swiper-container" [swiper]="swiperConfig">
+
     <div class="swiper-wrapper mb-4">
 
       <!-- Slides -->
-      <figure class="swiper-slide card-image" *ngFor="let imgUrl of card.imageUrls">
-        <img [src]="imgUrl" [alt]="card.name">
-      </figure>
-
+      <img class="swiper-slide card-image" [src]="imgUrl" [alt]="card.name" *ngFor="let imgUrl of card.imageUrls">
     </div>
 
     <div class="swiper-pagination text-center"></div>
