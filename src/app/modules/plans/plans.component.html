@@ -1,4 +1,4 @@
-<section class="plans-container py-4 px-5">
+<section class="plans-container py-4 px-sm-3 px-md-4">
 
   <div class="plans-content-wrapper mx-auto">
 
@@ -12,59 +12,233 @@
     </div>
 
     <!-- Content -->
-    <div class="d-flex">
-      <n26-credit-card style="width: 33%; max-width: 33%;" *ngFor="let card of creditCards$ | async" [card]="card"></n26-credit-card>
+    <div class="d-flex flex-column flex-sm-column flex-lg-row align-items-center">
+      <n26-credit-card class="credit-card-item"
+                       *ngFor="let card of creditCards$ | async" [card]="card"
+      >
+      </n26-credit-card>
+    </div>
+  </div>
+</section>
+
+<section class="plans-pricing py-4 px-5">
+  <div class="container">
+    <div class="card-deck justify-content-center align-items-center mb-3 text-center">
+
+      <!-- N26 -->
+      <div class="card pricing-card p-4 mb-4">
+
+        <!-- Header -->
+        <div class="card-header p-0">
+          <h1 class="card-title pricing-card-title">€0.00 <span class="text-muted">/ month</span></h1>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body p-0">
+          <ul class="list-unstyled pricing-card-benefits">
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free ATM withdrawals in euros
+            </li>
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free payments in any currency
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free withdrawals worldwide
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Allianz insurance package
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Selected discounts and offers from partner brands
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Extra Card
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Exclusive access to unique Metal Experiences
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Dedicated Customer Support
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- N26 You -->
+      <div class="card pricing-card p-4 mb-4">
+
+        <!-- Header -->
+        <div class="card-header p-0">
+          <h1 class="card-title pricing-card-title">€9.90 <span class="text-muted">/ month</span></h1>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body p-0">
+          <ul class="list-unstyled pricing-card-benefits">
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free ATM withdrawals in euros
+            </li>
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free payments in any currency
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free withdrawals worldwide
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Allianz insurance package
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Selected discounts and offers from partner brands
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Extra Card
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Exclusive access to unique Metal Experiences
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Dedicated Customer Support
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- N26 Metal -->
+      <div class="card pricing-card p-4 mb-4">
+
+        <!-- Header -->
+        <div class="card-header p-0">
+          <h1 class="card-title pricing-card-title">€16.90 <span class="text-muted">/ month</span></h1>
+        </div>
+
+        <!-- Body -->
+        <div class="card-body p-0">
+          <ul class="list-unstyled pricing-card-benefits">
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free ATM withdrawals in euros
+            </li>
+            <li class="pricing-card-benefits-item text-left mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free payments in any currency
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Free withdrawals worldwide
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Allianz insurance package
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Selected discounts and offers from partner brands
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Extra Card
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Exclusive access to unique Metal Experiences
+            </li>
+            <li class="pricing-card-benefits-item text-left text-muted mb-3">
+              <svg viewBox="0 0 16 16" aria-hidden="true" focusable="false" class="benefits-item-icon text-muted">
+                <path fill="currentcolor"
+                      d="M5.462 10.553l7.633-7.634a1.198 1.198 0 1 1 1.694 1.694l-8.464 8.466a1.206 1.206 0 0 1-.894.353 1.183 1.183 0 0 1-.821-.344L1.207 9.685a1.199 1.199 0 0 1 1.694-1.694l2.561 2.561v.001z"></path>
+              </svg>
+              Dedicated Customer Support
+            </li>
+          </ul>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-<!--<div class="container">-->
-<!--  <div class="card-deck mb-3 text-center">-->
-<!--    <div class="card mb-4 shadow-sm">-->
-<!--      <div class="card-header">-->
-<!--        <h4 class="my-0 font-weight-normal">Free</h4>-->
-<!--      </div>-->
-<!--      <div class="card-body">-->
-<!--        <h1 class="card-title pricing-card-title">$0 <small class="text-muted">/ mo</small></h1>-->
-<!--        <ul class="list-unstyled mt-3 mb-4">-->
-<!--          <li>10 users included</li>-->
-<!--          <li>2 GB of storage</li>-->
-<!--          <li>Email support</li>-->
-<!--          <li>Help center access</li>-->
-<!--        </ul>-->
-<!--        <button type="button" class="btn btn-lg btn-block btn-outline-primary">Sign up for free</button>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="card mb-4 shadow-sm">-->
-<!--      <div class="card-header">-->
-<!--        <h4 class="my-0 font-weight-normal">Pro</h4>-->
-<!--      </div>-->
-<!--      <div class="card-body">-->
-<!--        <h1 class="card-title pricing-card-title">$15 <small class="text-muted">/ mo</small></h1>-->
-<!--        <ul class="list-unstyled mt-3 mb-4">-->
-<!--          <li>20 users included</li>-->
-<!--          <li>10 GB of storage</li>-->
-<!--          <li>Priority email support</li>-->
-<!--          <li>Help center access</li>-->
-<!--        </ul>-->
-<!--        <button type="button" class="btn btn-lg btn-block btn-primary">Get started</button>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--    <div class="card mb-4 shadow-sm">-->
-<!--      <div class="card-header">-->
-<!--        <h4 class="my-0 font-weight-normal">Enterprise</h4>-->
-<!--      </div>-->
-<!--      <div class="card-body">-->
-<!--        <h1 class="card-title pricing-card-title">$29 <small class="text-muted">/ mo</small></h1>-->
-<!--        <ul class="list-unstyled mt-3 mb-4">-->
-<!--          <li>30 users included</li>-->
-<!--          <li>15 GB of storage</li>-->
-<!--          <li>Phone and email support</li>-->
-<!--          <li>Help center access</li>-->
-<!--        </ul>-->
-<!--        <button type="button" class="btn btn-lg btn-block btn-primary">Contact us</button>-->
-<!--      </div>-->
-<!--    </div>-->
-<!--  </div>-->
-<!--</div>-->

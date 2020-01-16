@@ -19,3 +19,56 @@ h1 {
     border-bottom: 3px solid $typography-interactive-teal;
   }
 }
+
+.credit-card-item {
+  width: calc(100% / 3);
+  min-width: 16.667em;
+}
+
+.pricing-card {
+  max-width: 16.667em;
+  box-shadow: $box-shadow-pricing-card;
+  border: none;
+  border-radius: $border-radius-xl;
+  transition-duration: 500ms;
+
+  &:hover {
+    box-shadow: $box-shadow-pricing-card-hover;
+  }
+
+  .card-header {
+    background-color: $background-default;
+    border-bottom: none;
+
+    .pricing-card-title {
+      font-size: 2.2em;
+
+      span {
+        font-size: 1rem;
+        font-weight: 400;
+        position: relative;
+        left: -10px;
+        top: 5px;
+      }
+    }
+  }
+
+  .pricing-card-benefits {
+    font-size: 0.81em;
+  }
+
+  .pricing-card-benefits-item {
+    padding-left: 2.3em;
+    line-height: 1.75;
+    position: relative;
+  }
+
+  .benefits-item-icon {
+    width: 1.1em;
+    height: 1.1em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: $typography-interactive-default;
+  }
+}

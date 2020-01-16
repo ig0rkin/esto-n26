@@ -83,6 +83,11 @@ $border-radius-half: 50%;
 $border-radius-circle: 100vw;
 
 // Box shadows
+$shadow-default: rgba(0, 0, 0, 0.2);
+
+$box-shadow-pricing-card: 0 20px 55px -37px $shadow-default;
+$box-shadow-pricing-card-hover: 0 35px 55px -25px $shadow-default;
+
 $box-shadow-swiper-button: rgb(255, 255, 255) 0px 0px 0px 3px, rgba(0, 0, 0, 0.4) 0px 4px 10px;
 $box-shadow-swiper-button-focus: 0 0 0 3px rgba(54, 161, 139, 0.6), 0 4px 10px rgba(0, 0, 0, 0.4);
 $box-shadow-credit-card: 0 45px 65px -40px rgb(116, 116, 116);
