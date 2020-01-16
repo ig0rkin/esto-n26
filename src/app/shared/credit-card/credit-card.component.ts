@@ -1,5 +1,9 @@
 import { Component, Input, OnInit } from '@angular/core';
+
+import { SwiperConfigInterface } from 'ngx-swiper-wrapper';
+
 import { ICreditCard } from '@core/models/credit-card';
+import { CreditCardService } from '@shared/credit-card/credit-card.service';
 
 @Component({
   selector: 'n26-credit-card',
@@ -9,12 +13,14 @@ import { ICreditCard } from '@core/models/credit-card';
 export class CreditCardComponent implements OnInit {
 
   @Input() card: ICreditCard;
-  @Input('enableSwiper') isSwiperEnabled: boolean;
 
-  constructor() {
+  public swiperConfig: SwiperConfigInterface;
+
+  constructor(private creditCardService: CreditCardService) {
   }
 
   ngOnInit() {
+    this.swiperConfig = this.creditCardService.getSwiperConfig(this.card.colors);
   }
 
 }

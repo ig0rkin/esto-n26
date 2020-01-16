@@ -1,7 +1,9 @@
 <section class="plans-container py-4 px-5">
 
   <div class="plans-content-wrapper mx-auto">
-    <div class="plans-header px-3 py-2 pt-md-4 pb-md-5 mx-auto text-center">
+
+    <!-- Header -->
+    <div class="plans-header px-3 py-2 pt-md-4 pb-md-5 text-center">
       <h1 class="display-4">Find a plan that works for you.</h1>
       <nav class="plans-nav">
         <a class="plans-nav-link active mx-3 py-1">Personal</a>
@@ -9,10 +11,10 @@
       </nav>
     </div>
 
-    <div class="credit-card-list d-flex">
-      <n26-credit-card *ngFor="let card of creditCards$ | async" [card]="card"></n26-credit-card>
+    <!-- Content -->
+    <div class="d-flex">
+      <n26-credit-card style="width: 33%; max-width: 33%;" *ngFor="let card of creditCards$ | async" [card]="card"></n26-credit-card>
     </div>
-
   </div>
 </section>
 
