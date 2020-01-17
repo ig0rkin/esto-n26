@@ -12,10 +12,7 @@ export class CreditCardService {
     const pagination: SwiperPaginationInterface = {
       el: '.swiper-pagination',
       clickable: true,
-      renderBullet: (index, className) => {
-        console.log(bulletColors);
-        return `<button class="${className} swiper-pagination-bullet-${bulletColors[index]} mx-1 p-0"></button>`;
-      }
+      renderBullet: (index, className) => `<button class="${className} swiper-pagination-bullet-${bulletColors[index]} mx-1 p-0"></button>`
     };
 
     return {

@@ -1,0 +1,12 @@
+@import "variables";
+
+.open-account-btn {
+  font-size: 0.8em;
+  color: $typography-default-inverted !important;
+  background-color: $background-container-teal;
+  padding: 0.44rem 0.88rem;
+  line-height: 1.4 !important;
+  font-weight: 700;
+  border-radius: $border-radius-l;
+  text-decoration: none;
+}

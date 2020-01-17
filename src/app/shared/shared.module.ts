@@ -4,12 +4,14 @@ import { CommonModule } from '@angular/common';
 import { HeaderComponent } from './layout/header/header.component';
 import { FooterComponent } from './layout/footer/footer.component';
 import { CreditCardModule } from '@shared/credit-card/credit-card.module';
+import { AnimateOnScrollDirective } from './directives/animate-on-scroll.directive';
 
 
 @NgModule({
   declarations: [
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AnimateOnScrollDirective
   ],
   imports: [
     CommonModule,
@@ -21,6 +23,7 @@ import { CreditCardModule } from '@shared/credit-card/credit-card.module';
 
     HeaderComponent,
     FooterComponent,
+    AnimateOnScrollDirective,
 
     CreditCardModule
   ]

@@ -1,6 +1,6 @@
 <header class="fixed-top">
-  <div class="container">
-    <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4">
+  <div class="container d-flex align-items-center justify-content-between">
+    <div class="d-flex flex-column flex-md-row align-items-center flex-grow-1 p-3 px-md-4">
 
       <!-- Logo -->
       <a href="#" title="N26" class="logo-link">
@@ -25,17 +25,27 @@
           <span>/</span>
           <a class="nav-link active py-2 pl-1 pr-2" href="#">DE</a>
         </div>
-
-        <!-- Animated link -->
-        <a class="nav-link d-flex align-items-center ml-5" href="#">
-          Online Banking
-          <svg viewBox="0 0 20.94 21.75" aria-hidden="true" focusable="false" class="online-banking-icon ml-3">
-            <path d="M20.94 21.75H6.27a.5.5 0 1 1 0-1h13.67V1H6.27a.5.5 0 0 1 0-1h14.67z"></path>
-            <path
-              d="M16.28 10.47l-3.67-3.92a.49.49 0 0 0-.71 0 .54.54 0 0 0 0 .74l3 3.17H.5a.52.52 0 0 0 0 1h14.18l-2.79 3a.54.54 0 0 0 0 .74.48.48 0 0 0 .71 0l3.67-3.92a.67.67 0 0 0 0-.81z"></path>
-          </svg>
-        </a>
       </nav>
+
+
+    </div><!-- Animated link -->
+    <div class="d-flex flex-column align-items-center animation-container ml-3 p-3 px-md-1"
+         n26AnimateOnScroll
+         [addClass]="'active'"
+         [breakpoint]="300">
+
+      <!-- Online banking -->
+      <a href="#" class="nav-link d-flex align-items-center">
+        Online Banking
+        <svg viewBox="0 0 20.94 21.75" aria-hidden="true" focusable="false" class="online-banking-icon ml-3">
+          <path d="M20.94 21.75H6.27a.5.5 0 1 1 0-1h13.67V1H6.27a.5.5 0 0 1 0-1h14.67z"></path>
+          <path
+            d="M16.28 10.47l-3.67-3.92a.49.49 0 0 0-.71 0 .54.54 0 0 0 0 .74l3 3.17H.5a.52.52 0 0 0 0 1h14.18l-2.79 3a.54.54 0 0 0 0 .74.48.48 0 0 0 .71 0l3.67-3.92a.67.67 0 0 0 0-.81z"></path>
+        </svg>
+      </a>
+
+      <!-- Open account -->
+      <a href="#" class="open-account-btn">Open Bank Account</a>
     </div>
   </div>
 </header>

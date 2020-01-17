@@ -26,3 +26,34 @@ a {
   width: 1em;
   height: 1em;
 }
+
+.animation-container {
+  overflow: hidden;
+  height: $header-height;
+
+  a {
+    transition: transform 0.4s ease-in-out, opacity 0.2s ease-in-out;
+  }
+
+  .nav-link {
+    transform: translateY(0%);
+    visibility: visible;
+  }
+
+  .open-account-btn {
+    transform: translateY(50%);
+    opacity: 0;
+  }
+
+  &.active {
+    .nav-link {
+      transform: translateY(-200%);
+      opacity: 0;
+    }
+
+    .open-account-btn {
+      transform: translateY(-110%);
+      opacity: 1;
+    }
+  }
+}
