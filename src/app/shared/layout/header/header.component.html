@@ -1,6 +1,6 @@
 <header class="fixed-top">
   <div class="container d-flex align-items-center justify-content-between">
-    <div class="d-flex flex-column flex-md-row align-items-center flex-grow-1 p-3 px-md-4">
+    <div class="d-flex flex-column-sm flex-md-row flex-grow-1 align-items-start p-3 px-md-4">
 
       <!-- Logo -->
       <a href="#" title="N26" class="logo-link">
@@ -13,8 +13,17 @@
         <span class="n26-country-badge">DE</span>
       </a>
 
+      <!-- Dropdown menu -->
+      <div class="d-flex d-lg-none ml-auto header-dropdown-menu">
+        <svg height="30" width="30" aria-hidden="true" focusable="false">
+          <rect height="2" width="30" x="0" y="4" class=""></rect>
+          <rect height="2" width="30" x="0" y="14" class=""></rect>
+          <rect height="2" width="30" x="0" y="24" class=""></rect>
+        </svg>
+      </div>
+
       <!-- Navigation -->
-      <nav class="d-flex ml-auto">
+      <nav class="d-none d-lg-flex ml-auto">
         <a class="nav-link p-2 mr-1" href="#">Bank Account</a>
         <a class="nav-link p-2 mr-1" href="#">N26 You</a>
         <a class="nav-link p-2 mr-1" href="#">Metal</a>
@@ -29,7 +38,7 @@
 
 
     </div><!-- Animated link -->
-    <div class="d-flex flex-column align-items-center animation-container ml-3 p-3 px-md-1"
+    <div class="d-none d-lg-flex flex-column align-items-center ml-3 p-3 px-md-1 animation-container"
          n26AnimateOnScroll
          [addClass]="'active'"
          [breakpoint]="300">

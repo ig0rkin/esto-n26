@@ -1,3 +1,6 @@
+// Breakpoints
+$screen-xs: 576px;
+
 // Colors
 $background-default: rgb(255, 255, 255);
 $background-alternate: rgb(251, 251, 251);
@@ -65,7 +68,9 @@ $iconography-action: rgb(54, 161, 139);
 // Sizing
 $container-max-width: 79.3rem;
 $header-height: 70px;
+$header-height-xs: 60px;
 $content-padding-top: $header-height;
+$content-padding-top-xs: $header-height-xs;
 
 // Border radius
 $border-radius-5-xl: 34px;
