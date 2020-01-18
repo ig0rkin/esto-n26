@@ -15,7 +15,6 @@ export class AccountComponent implements OnInit {
   }
 
   ngOnInit() {
-    console.log(this.route.snapshot.params);
     this.cardTitle = this.route.snapshot.queryParamMap.get('title');
   }
 }
