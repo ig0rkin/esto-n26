@@ -10,7 +10,6 @@ export class AnimateOnScrollDirective {
   constructor(private renderer: Renderer2, private elementRef: ElementRef) {
   }
 
-  // не работает
   @HostListener('window:scroll', ['$event'])
   private onScroll(event: Event): void {
     const scrollPosition = window.pageYOffset;
